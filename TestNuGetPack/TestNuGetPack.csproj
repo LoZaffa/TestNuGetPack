@@ -2,7 +2,12 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Authors>LoZaffa</Authors>
+    <Company>Altran</Company>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/LoZaffa/TestNuGetPack</PackageProjectUrl>
+    <RepositoryUrl>git@https://github.com/LoZaffa/TestNuGetPack.git</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
