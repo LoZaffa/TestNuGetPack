@@ -1,13 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <Authors>LoZaffa</Authors>
     <Company>Altran</Company>
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://github.com/LoZaffa/TestNuGetPack</PackageProjectUrl>
     <RepositoryUrl>git@https://github.com/LoZaffa/TestNuGetPack.git</RepositoryUrl>
+    <ApplicationIcon />
+    <StartupObject />
+    <Configurations>Debug;Release;NetFramework 4.7.1</Configurations>
   </PropertyGroup>
 
 </Project>

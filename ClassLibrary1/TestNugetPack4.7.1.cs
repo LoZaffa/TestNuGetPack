@@ -1,11 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace TestNuGetPack
+namespace TestNugetPack471
 {
-    public class TestNuGetPack
+    public class TestNugetPack471
     {
-        
-        public TestNuGetPack()
+        public TestNugetPack471()
         {
             StartStep = 0;
             EndStep = 100;
@@ -20,14 +23,23 @@ namespace TestNuGetPack
             uint value = _f;
             uint old = 0;
             uint temp = 0;
+            uint result = 0;
             for (int i = 0; i < StartStep; i++)
             {
                 temp = value;
                 value = Fibonacci(value, old);
                 old = temp;
             }
-                
-            return value;
+            result += value;
+            for (int i = (int)StartStep; i < EndStep; i++)
+            {
+                temp = value;
+                value = Fibonacci(value, old);
+                result += value;
+                old = temp;
+            }
+
+            return result;
         }
 
         private uint Fibonacci(uint f1, uint f2)
@@ -37,5 +49,4 @@ namespace TestNuGetPack
 
         private uint _f = 1;
     }
-
 }
